@@ -23,7 +23,7 @@ body {
 
 .id-card {
     flex-direction: row;
-    width: 500px;
+    width: 520px;
 }
 
 .group-card {
@@ -50,20 +50,51 @@ body {
 .button {
     margin: 20px;
     padding: 10px 15px;
-    background-color: #007BFF;
+    background-color: #2196f3;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
     display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .button:hover {
-    background-color: #005cbe;
+    background-color: #1769aa;
 }
 
 .avatar {
     border-radius: 100%;
     height: 200px;
     margin-right: 20px;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #2196f3;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav-item {
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: #1769aa;
+}
+
+.nav-item.active {
+    background-color: #1976d2;
 }
